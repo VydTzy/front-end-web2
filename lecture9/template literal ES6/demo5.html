@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Templete Literal ES6</title>
+  </head>
+  <body>
+    <div id="output"></div>
+    <script>
+      //mengggunakan Template Literal
+      const nama = "David Rikhy Tjia";
+      const usia = 19;
+      const pekerjaan = "Belum Bekerja";
+
+      const profil = `
+            Name: ${nama} <br>
+            Age: ${usia} <br>
+            Expertise/job: ${pekerjaan}
+        `;
+
+      //menampilkan output ke dalam elemen html dengan id "output"
+      document.getElementById("output").innerHTML = profil;
+    </script>
+  </body>
+</html>
